@@ -7,8 +7,8 @@ class Database:
         try:
             self.connection = pymysql.connect(
                 # host='localhost',
-                host='mariadb',  # cloudtype 사용 시
-                port=3306,   # cloudtype 사용 시
+                host=os.environ.get('DB_HOST'),  # cloudtype 사용 시
+                port=os.environ.get('DB_PORT'),   # cloudtype 사용 시
                 database='test',  # test 데이터베이스 사용
                 user='root',
                 password=os.environ.get('DB_PASSWORD'),  # mariadb 설치 당시의 패스워드, 실제 환경에서는 보안을 위해 환경변수 등을 사용
