@@ -1,2 +1,21 @@
-/.venv
-/__pycache__
+환경 변수 (절대 업로드 금지)
+.env
+
+가상환경
+.venv/
+venv/
+
+Python 캐시
+pycache/
+*.pyc
+
+OS 파일
+.DS_Store
+Thumbs.db
+
+IDE 설정
+.vscode/
+.idea/
+
+로그
+*.log 
